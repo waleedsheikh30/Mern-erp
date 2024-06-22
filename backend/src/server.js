@@ -2,6 +2,12 @@ require('module-alias/register');
 const mongoose = require('mongoose');
 const { globSync } = require('glob');
 const path = require('path');
+const cors = require('cors');
+const express = require('express');
+
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 
 // Make sure we are running node 7.6+
