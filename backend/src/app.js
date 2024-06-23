@@ -32,6 +32,11 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(compression());
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to ERP API' });
+});
+
+
 // // default options
 // app.use(fileUpload());
 
