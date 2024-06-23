@@ -33,7 +33,7 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: ['https://mern-erp-backend.vercel.app'], // Replace with your actual frontend URL
+  origin: ['https://mern-erp-frontend.vercel.app'], // Replace with your actual frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 };
